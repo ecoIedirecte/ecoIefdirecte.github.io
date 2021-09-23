@@ -1,11 +1,13 @@
 body{
   /* https://www.color-hex.com/color/d3d3d3 */
   background-color: #fff; /*#f6f6f6, EBEBD3, fafafa*/
-  font-family: Bungee Outline;
+  font-family: 'Bungee Outline', cursive;
   font-weight: 900;
 
   overflow: hidden;
   animation: blur 0.5s ease-out;
+
+  /*autre font: font-family: 'Patrick Hand', cursive; */
 
 }
 *{
@@ -23,7 +25,8 @@ body{
   justify-content: center;
   align-items: center;
 
-  background-color: #D64045;/*#467599;*/
+  background: rgb(255,255,255);
+  background: linear-gradient(332deg, rgba(255,255,255,1) 0%, rgba(0,134,255,1) 100%);
   border-bottom: 5px solid #fff;
   box-shadow: 0 0 30px -18px #D64045;
 
@@ -83,7 +86,7 @@ body{
   font-weight: bold;
   text-align: center;
   background-color: Transparent;
-  border-bottom: 2px dashed #1D3354;
+  border-bottom: 2px dashed #0086ff;
 
 }
 #join_input:focus{
@@ -169,7 +172,7 @@ body{
   color: #ccc;
 }
 #chat_input_send.enabled{
-  color: #D64045;
+  color: #0086ff;
   background-color: Transparent;
   cursor: pointer;
 
@@ -186,7 +189,7 @@ body{
   margin-top: 20px;
 }
 #chat_logout{
-  color: #D64045;
+  color: #0086ff;
   cursor: pointer;
 }
 #chat_logout:hover{
@@ -228,7 +231,7 @@ body{
 .enabled{
   transition: background-color 0.5s;
   color: #fff;
-  background-color: #D64045; /*#5B7553;*/
+  background-color: #0086ff; /*#5B7553;*/
   cursor: pointer;
 }
 #title_container.chat_title_container{
@@ -273,7 +276,7 @@ body{
   100% {}
 }
 ::selection {
-  background-color: #D64045;
+  background-color: #0086ff;
   color: #fff;
 }
 /* width */
