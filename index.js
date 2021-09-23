@@ -37,9 +37,9 @@ const firebaseConfig = {
       var title_inner_container = document.createElement('div')
       title_inner_container.setAttribute('id', 'title_inner_container')
 
-      var title = document.createElement('h1')
+      var title = document.createElement('img')
       title.setAttribute('id', 'title')
-      title.textContent = 'Devoirs'
+      title.src = 'https://zupimages.net/up/21/38/qbpz.png'
 
       title_inner_container.append(title)
       title_container.append(title_inner_container)
@@ -147,12 +147,13 @@ const firebaseConfig = {
       chat_input_send.setAttribute('disabled', true)
       chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
 
+
       var chat_input = document.createElement('input')
       chat_input.setAttribute('id', 'chat_input')
       // Only a max message length of 1000
       chat_input.setAttribute('maxlength', 1000)
       // Get the name of the user
-      chat_input.placeholder = `${parent.get_name()}, écrit ici`
+      chat_input.placeholder = `${parent.get_name()} ecrit ici`
       chat_input.onkeyup  = function(){
         if(chat_input.value.length > 0){
           chat_input_send.removeAttribute('disabled')
@@ -182,7 +183,7 @@ const firebaseConfig = {
 
       var chat_logout = document.createElement('button')
       chat_logout.setAttribute('id', 'chat_logout')
-      chat_logout.textContent = `${parent.get_name()} • logout`
+      chat_logout.textContent = `${parent.get_name()} • Quitter`
       // "Logout" is really just deleting the name from the localStorage
       chat_logout.onclick = function(){
         localStorage.clear()
@@ -285,6 +286,7 @@ const firebaseConfig = {
             }
           })
         })
+
 
         // Now we're done. Simply display the ordered messages
         ordered.forEach(function(data) {
